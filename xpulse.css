@@ -1,0 +1,1256 @@
+/* Page HTML, BODY tag setting */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: visible;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Open Sans";
+}
+
+/*Main Container containing all the folds */
+#container {
+  width: 100%;
+  height: auto;
+}
+
+/*Fold 1 and its internal elements */
+#fold1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#fold1_left,
+#fold1_right {
+  display: flex;
+  flex-direction: column;
+  width: 43vw;
+  height: 100vh;
+  background-color: #ee2326;
+}
+#name {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 30vw;
+  height: 10vh;
+  padding: 2%;
+}
+#name h1 {
+  color: white;
+  font-weight: lighter;
+  cursor: default;
+}
+#fold1_right {
+  justify-content: right;
+}
+/* Social Media Share buttons and elements*/
+#social {
+  margin-top: 25%;
+  margin-left: 37.8%;
+  width: 100%;
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#social input {
+  color: white;
+  background-color: black;
+  height: 100%;
+  width: 15%;
+  padding: 1% 1% 1% 1%;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-top: 20%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+#social input:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+#social input:focus {
+  outline: none;
+}
+#social_share {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.fa {
+  padding: 2%;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4%;
+  margin-right: 2%;
+  border-radius: 50%;
+  z-index: 2;
+}
+#social_share ul {
+  list-style-type: none;
+  text-align: right;
+}
+a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: all 1s;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-snapchat-ghost {
+  background: black;
+  color: white;
+}
+#fold1_middle {
+  display: flex;
+  flex-direction: column;
+  width: 14vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 1;
+}
+#title {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15%;
+}
+#title h1 {
+  color: white;
+  font-size: 700%;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  white-space: nowrap;
+  z-index: 3;
+  cursor: default;
+}
+#bike {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+}
+#bike img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 375%;
+  z-index: 2;
+}
+/*Radio buttons for different bikes and settings */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 22%;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#radio {
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  margin-left: 15%;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  background-color: red;
+  border-radius: 50%;
+}
+#checkmark1 {
+  background-color: black;
+}
+#checkmark2 {
+  background-color: red;
+}
+#checkmark3 {
+  background-color: darkolivegreen;
+}
+#checkmark4 {
+  background-color: white;
+}
+#checkmark5 {
+  background-color: grey;
+}
+#container1,
+#container3,
+#container4,
+#container5 {
+  color: #ee2326;
+}
+.container:hover input ~ .checkmark {
+  height: 30px;
+  width: 30px;
+  border: 3px solid white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: -6px;
+}
+.container input:checked ~ .checkmark {
+  height: 30px;
+  width: 30px;
+  border: 3px solid white;
+  left: -6px;
+}
+
+/*Fold 2 and its internal elements */
+#fold2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+#fold2_info {
+  display: flex;
+  flex-direction: column;
+  width: 43vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  transition: all 3s;
+}
+#fold2_title {
+  padding-left: 20%;
+  padding-top: 15%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15%;
+}
+#fold2_title h2 {
+  color: black;
+  font-size: 250%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: all 3s;
+}
+#fold2_subtitle {
+  padding-top: 20%;
+  padding-left: 15%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15%;
+  z-index: 1;
+}
+#fold2_subtitle h3 {
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  cursor: default;
+  font-size: 140%;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  transition: all 3s;
+}
+#fold2_para {
+  padding-top: 7%;
+  padding-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 160%;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+.fold2_para {
+  color: black;
+  font-weight: lighter;
+  margin: 0;
+  cursor: default;
+  line-height: 2;
+  transition: all 3s;
+}
+#fold2_bike_specs {
+  display: flex;
+  flex-direction: column;
+  width: 57vw;
+  min-height: 100%;
+  background-color: white;
+}
+#fold2_bike_specs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 57vw;
+  height: 100%;
+  z-index: 1;
+}
+#fold2_bike1 {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 50%;
+  z-index: 1;
+  position: absolute;
+}
+#fold2_bike2 {
+  opacity: 0;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 50%;
+  z-index: 2;
+  position: absolute;
+  transition: all 3s;
+  transition-delay: 1s;
+}
+
+/*Fold 3 and its internal elements */
+#fold3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(205, 205, 205, 0.7) 100%
+  );
+}
+#fold3_head {
+  padding-top: 5%;
+  padding-left: 9%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15%;
+}
+#fold3_head h2 {
+  color: black;
+  font-size: 240%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+#fold3_heading {
+  position: relative;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+  0% {
+    font-size: 240%;
+  }
+  10% {
+    font-size: 239%;
+  }
+  20% {
+    font-size: 238%;
+  }
+  30% {
+    font-size: 237%;
+  }
+  40% {
+    font-size: 236%;
+  }
+  50% {
+    font-size: 235%;
+  }
+  60% {
+    font-size: 236%;
+  }
+  70% {
+    font-size: 237%;
+  }
+  80% {
+    font-size: 238%;
+  }
+  90% {
+    font-size: 239%;
+  }
+  100% {
+    font-size: 240%;
+  }
+}
+
+#fold3_back {
+  display: flex;
+  justify-content: center;
+  vertical-align: top;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 85%;
+  z-index: 1;
+  padding-bottom: 90%;
+}
+#fold3_back h3 {
+  opacity: 0.2;
+  color: rgba(215, 215, 215, 1);
+  font-weight: bolder;
+  margin: 0;
+  cursor: default;
+  font-size: 30rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  transition: all 3s;
+  position: absolute;
+}
+#fold3_image {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+}
+#fold3_image img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
+  z-index: 2;
+  position: absolute;
+  height: auto;
+  width: 40%;
+  transition: all 3s;
+}
+#fold4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(207, 207, 207, 0.7) 0%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+#fold4_head {
+  padding-top: 5%;
+  padding-left: 9%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15vh;
+}
+/*
+#fold4_head h2 {
+  color: black;
+  font-size: 220%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}*/
+#fold4_nav {
+  margin-top: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+}
+
+#fold4_nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding-bottom: 6px;
+  margin-right: 3.5rem;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+#fold4_nav a:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+#fold4_nav a:focus {
+  border-bottom: 2px solid #ee2326;
+  color: black;
+}
+#fold4_head h2 {
+  font-size: 240%;
+  cursor: default;
+  font-weight: 900;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+}
+#fold4_heading {
+  color: #fff;
+  -webkit-animation: neon1 1s ease-in-out infinite alternate;
+  -moz-animation: neon1 1s ease-in-out infinite alternate;
+  animation: neon1 1s ease-in-out infinite alternate;
+}
+#fold4_heading :hover {
+  color: #000000;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 4px #000000,
+      0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+  }
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 4px #000000,
+      0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 4px #000000,
+      0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+  }
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 4px #000000,
+      0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000, 0 0 4px #000000;
+  }
+}
+#fold4_gall {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+#fold4_gall_radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 10%;
+  z-index: 3;
+  position: absolute;
+}
+.fold4_part {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 4;
+}
+.fold4_part:hover {
+  border: 2px solid #ee2326;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#fold4_part a:focus {
+  border-bottom: 2px solid #ee2326;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#fold4_gall_slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: nowrap;
+  width: 80%;
+  position: absolute;
+  z-index: 0;
+}
+#fold4_image {
+  padding-top: 25%;
+  padding-left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 40%;
+  height: 10%;
+  position: absolute;
+  z-index: 0;
+}
+#fold4_image img {
+  height: 378px;
+  width: 600px;
+}
+#fold4_text {
+  display: flex;
+  padding-left: 20%;
+  width: 40vw;
+  height: 10vh;
+  margin-top: 7%;
+  text-align: center;
+  justify-content: center;
+  font-size: 100%;
+  cursor: default;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  transition: all 3s;
+}
+#fold5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 140vh;
+  position: relative;
+}
+#fold5_head {
+  padding-top: 5%;
+  padding-left: 9%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15vh;
+}
+#fold5_head h2 {
+  color: black;
+  font-size: 220%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold5_nav {
+  margin-top: 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+}
+
+#fold5_nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding-bottom: 6px;
+  margin-right: 2.8rem;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+#fold5_nav a:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+#fold5_nav a:focus {
+  border-bottom: 2px solid #ee2326;
+  color: black;
+}
+#fold5_spec {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10%;
+}
+#fold5_spec_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 100vh;
+  z-index: 1;
+}
+#fold5_spec_right {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  transition: all 3s;
+}
+#fold5_engine {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 35%;
+  z-index: 1;
+  position: relative;
+  animation-name: zoom1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom1 {
+  0% {
+    height: auto;
+    width: 40%;
+    opacity: 0.9;
+  }
+  10% {
+    height: auto;
+    width: 41%;
+    opacity: 1;
+  }
+  20% {
+    height: auto;
+    width: 41%;
+    opacity: 1;
+  }
+  30% {
+    height: auto;
+    width: 43%;
+    opacity: 1;
+  }
+  40% {
+    height: auto;
+    width: 44%;
+    opacity: 1;
+  }
+  50% {
+    height: auto;
+    width: 45%;
+    opacity: 1;
+  }
+  60% {
+    height: auto;
+    width: 44%;
+    opacity: 1;
+  }
+  70% {
+    height: auto;
+    width: 43%;
+    opacity: 1;
+  }
+  80% {
+    height: auto;
+    width: 42%;
+    opacity: 1;
+  }
+  90% {
+    height: auto;
+    width: 41%;
+    opacity: 1;
+  }
+  100% {
+    height: auto;
+    width: 40%;
+    opacity: 0.9;
+  }
+}
+#fold5_table {
+  margin-top: 8%;
+  padding-left: 12%;
+  padding-right: 14%;
+  width: 100%;
+}
+caption {
+  font-size: 120%;
+  padding-left: 13%;
+  padding-bottom: 3%;
+  text-align: left;
+  transition: all 3s;
+  color: black;
+  transition: all 3s;
+}
+th,
+td {
+  padding: 1%;
+  padding-bottom: 3%;
+}
+th {
+  text-align: left;
+}
+.td1 {
+  font-size: 85%;
+  vertical-align: top;
+  color: #646464;
+  width: 25%;
+  letter-spacing: 1px;
+  transition: all 3s;
+}
+.td2 {
+  font-size: 85%;
+  text-align: left;
+  color: black;
+  width: 10%;
+  letter-spacing: 1px;
+  transition: all 3s;
+}
+#fold6 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#fold_left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+#fold6_testdrive {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 50vh;
+}
+#fold6_testdrive_head {
+  padding-top: 5%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15vh;
+}
+#fold6_testdrive_head h2 {
+  color: black;
+  font-size: 220%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold6_testdrive_subhead {
+  padding-top: 1%;
+  padding-left: 32%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 5vh;
+}
+#fold6_testdrive_subhead p {
+  color: black;
+  font-size: 60%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold6_testdrive_formhead {
+  padding-top: 3%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 10vh;
+}
+#fold6_testdrive_formhead h2 {
+  color: black;
+  font-size: 120%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold6_testdrive_form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  padding-left: 10%;
+  width: 100%;
+  height: 50%;
+}
+#fold6_testdrive_form_input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35%;
+}
+.fold6_input1 {
+  width: 22%;
+}
+.fold6_input1 input {
+  width: 96%;
+  height: auto;
+  background-color: white;
+  padding: 5% 5% 5% 5%;
+  border: none;
+  border-radius: 3%;
+  box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.2),
+    2px 2px 2px rgba(100, 100, 100, 0.19);
+}
+.fold6_input1 input:focus {
+  outline: none;
+}
+#fold6_testdrive_form_submit {
+  width: 20%;
+  padding-top: 1%;
+}
+#fold6_testdrive_form_submit input {
+  width: 40%;
+  height: auto;
+  color: rgb(250, 250, 250);
+  background-color: #ee2326;
+  padding: 5% 5% 5% 5%;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  text-align: center;
+}
+#fold6_testdrive_form_submit input:hover {
+  opacity: 0.9;
+}
+#tc {
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 20%;
+}
+#tc p {
+  padding-top: 2%;
+  color: grey;
+  font-size: 70%;
+  margin: 0;
+  cursor: default;
+  white-space: nowrap;
+}
+#fold6_pricecheck {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 50vh;
+}
+#fold6_price_head {
+  padding-top: 5%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15vh;
+}
+#fold6_price_head h2 {
+  color: black;
+  font-size: 220%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold6_price_subhead {
+  padding-top: 3%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 10vh;
+}
+#fold6_price_subhead h2 {
+  color: black;
+  font-size: 120%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold6_price_search {
+  width: 20%;
+  padding-top: 2%;
+  margin-left: 10%;
+}
+#fold6_price_search input {
+  width: 40%;
+  height: auto;
+  color: rgb(250, 250, 250);
+  background-color: #ee2326;
+  padding: 5% 5% 5% 5%;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  text-align: center;
+}
+#fold6_price_search input:hover {
+  opacity: 0.9;
+}
+#fold6_price_input1 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  padding-top: 1%;
+  margin-left: 10%;
+}
+.fold6_sel {
+  width: 90%;
+}
+.fold6_sel select {
+  width: 95%;
+  height: auto;
+  background-color: white;
+  padding: 4% 5% 4% 5%;
+  border: none;
+  border-radius: 3%;
+  box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.2),
+    2px 2px 2px rgba(100, 100, 100, 0.19);
+  outline: none;
+}
+#fold6_right {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+#fold6_right img {
+  display: flex;
+  justify-content: right;
+  flex-wrap: nowrap;
+  height: 670px;
+  width: 290px;
+}
+#fold7 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+#fold7 img {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  height: 324;
+  width: 1366;
+  z-index: 2;
+}
+#fold7 :hover {
+  opacity: 0.9;
+}
+#fold8 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    178deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(245, 245, 245, 1) 33%,
+    rgba(230, 230, 230, 1) 65%,
+    rgba(255, 255, 255, 1) 65%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+#fold8_head {
+  padding-top: 3%;
+  padding-left: 8%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 15vh;
+}
+#fold8_head h2 {
+  color: black;
+  font-size: 220%;
+  margin: 0;
+  cursor: default;
+  font-weight: 900;
+  white-space: nowrap;
+}
+#fold8_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 4%;
+  padding-left: 5%;
+}
+.fold8_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.fold8_bikename {
+  cursor: default;
+  white-space: nowrap;
+  font-size: 110%;
+  font-weight: bolder;
+  margin: 0;
+}
+.fold8_bikemodel {
+  cursor: default;
+  white-space: nowrap;
+  font-size: 80%;
+  margin: 0;
+}
+.fold8_bikemore {
+  color: #ee2326;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 90%;
+  margin: 0;
+}
+#fold8_bike12,
+#fold8_bike13 {
+  padding-right: 20%;
+  height: 300px;
+  width: 420px;
+}
+#fold8_bike11 {
+  margin-right: 10%;
+  height: 300px;
+  width: 420px;
+}
+#fold9 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(40, 40, 40);
+}
+#fold9_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  padding-top: 5%;
+}
+.fold9_info_head {
+  cursor: default;
+  font-size: 100%;
+  margin: 0;
+  color: grey;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 0%;
+}
+.fold9_info_para {
+  color: grey;
+  cursor: default;
+  font-size: 95%;
+  margin: 0;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  line-height: 2;
+  text-align: justify;
+}
+#fold9_nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+}
+
+#fold9_navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+}
+#fold9_navigation a {
+  padding-right: 2%;
+  font-size: 80%;
+  color: lightgrey;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#fold9_navigation a:hover {
+  background-color: rgb(40, 40, 40);
+}
+#fold9_copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-left: 27%;
+}
+
+#fold9_copyright p {
+  cursor: default;
+  font-size: 80%;
+  color: lightgrey;
+  white-space: nowrap;
+}

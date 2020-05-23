@@ -1,0 +1,355 @@
+/* Setting for body */
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/*Container containing Login and Signup form */
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+/*Login area setting */
+.login {
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  border-radius: 4px;
+  font-family: "open sans";
+  justify-content: center;
+  height: 90%;
+  width: 50%;
+}
+
+#login_show {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5%;
+}
+#login_title {
+  text-align: center;
+}
+#login_title h1 {
+  font-weight: lighter;
+}
+#login_email,
+#login_pass {
+  margin-top: 8%;
+}
+#login_email label,
+#login_pass label {
+  font-weight: lighter;
+  font-size: 80%;
+}
+#login_email input,
+#login_pass input {
+  width: 95%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+#login_email input:focus,
+#login_pass input:focus {
+  outline: none;
+}
+#submit {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+}
+#login_div1 {
+  width: 35%;
+  margin: 0%;
+}
+.login_switch1 {
+  width: 100%;
+  color: white;
+  background-color: #ee2326;
+  padding: 10% 15% 10% 15%;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-top: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+#forgetpass {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#forgetpass p {
+  display: flex;
+  font-size: 80%;
+  padding-top: 5%;
+  justify-content: right;
+  cursor: pointer;
+}
+
+/* Switch setting to toggle Login to Signup */
+#signup_hide {
+  background-color: #ee2326;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 5%;
+}
+#signup_hide_title {
+  color: white;
+  text-align: center;
+}
+#signup_hide_title h1 {
+  margin-top: 0;
+  font-weight: lighter;
+}
+#signup_hide_desc {
+  color: white;
+  padding: 0% 0% 1% 0%;
+  text-align: center;
+}
+#signup_div1 {
+  width: 30%;
+  margin: 0%;
+}
+.signup_switch1 {
+  width: 100%;
+  color: #ee2326;
+  background-color: white;
+  padding: 10% 20% 10% 20%;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  margin-top: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Signup area setting */
+.signup {
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  font-family: "open sans";
+  flex-direction: row;
+  justify-content: center;
+  height: 90%;
+  width: 50%;
+}
+
+/* Switch setting to toggle Login to Signup */
+#login_hide {
+  background-color: #ee2326;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 5%;
+}
+#login_hide_title {
+  color: white;
+  text-align: center;
+}
+#login_hide_title h1 {
+  margin-top: 0;
+  font-weight: lighter;
+}
+#login_hide_desc {
+  color: white;
+  padding: 0% 0% 1% 0%;
+  text-align: center;
+}
+#login_div2 {
+  width: 30%;
+  margin: 0%;
+}
+.login_switch2 {
+  width: 100%;
+  color: #ee2326;
+  background-color: white;
+  padding: 10% 20% 10% 20%;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  margin-top: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+#signup_show {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5%;
+}
+#signup_title {
+  text-align: center;
+}
+#signup_title h1 {
+  font-weight: lighter;
+}
+#signup_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#signup_name_first,
+#signup_name_last {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 6%;
+}
+#signup_name_first {
+  padding: 0% 5% 0% 0%;
+}
+#signup_name_last {
+  padding: 0% 0% 0% 5%;
+}
+#signup_name_first label,
+#signup_name_last label {
+  font-weight: lighter;
+  font-size: 80%;
+}
+#signup_name_first input,
+#signup_name_last input {
+  width: 95%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+#signup_name_first input:focus,
+#signup_name_last input:focus {
+  outline: none;
+}
+#signup_email,
+#signup_pass,
+#signup_number {
+  margin-top: 6%;
+}
+#signup_email label,
+#signup_pass label,
+#signup_number label {
+  font-weight: lighter;
+  font-size: 80%;
+}
+#signup_email input,
+#signup_pass input,
+#signup_number input {
+  width: 95%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+#signup_email input:focus,
+#signup_pass input:focus,
+#signup_number input:focus {
+  outline: none;
+}
+
+#captcha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#captcha_text,
+#captcha_value {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 6%;
+}
+#captcha_text {
+  padding: 0% 5% 0% 0%;
+}
+#captcha_value {
+  padding: 0% 0% 0% 5%;
+}
+#captcha_text label {
+  font-weight: lighter;
+  font-size: 80%;
+}
+#captcha_text input {
+  width: 95%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+#captcha_value input {
+  width: 95%;
+  margin-top: 10%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+}
+#captcha_text input:focus,
+#captcha_value input:focus {
+  outline: none;
+}
+
+#signup_tc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#left {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  padding-right: 1%;
+}
+#left input {
+  cursor: pointer;
+}
+#right {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#right p {
+  padding-top: 2%;
+  font-weight: lighter;
+  font-size: 70%;
+  text-align: justify;
+}
+#signup_button {
+  width: 35%;
+  margin: 0%;
+}
+.signup_but {
+  width: 100%;
+  color: white;
+  background-color: #ee2326;
+  padding: 10% 15% 10% 15%;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-top: 15%;
+  text-align: center;
+  font-weight: bold;
+}

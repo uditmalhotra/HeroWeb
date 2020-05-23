@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hero</title>
+    <link rel="stylesheet" type="text/css" href="LoginSignup.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div class="modal">
+      <!--Login area container -->
+      <div class="login">
+        <!--Login Side area and form -->
+        <div id="login_show">
+          <div id="login_title">
+            <h1>LOGIN</h1>
+          </div>
+          <div id="login_form">
+            <form>
+              <div id="login_email">
+                <label>EMAIL</label><br />
+                <input
+                  type="email"
+                  id="loginemail"
+                  name="loginemail"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div id="login_pass">
+                <label>PASSWORD</label><br />
+                <input
+                  type="password"
+                  id="loginpassword"
+                  name="loginpassword"
+                  placeholder=""
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
+                />
+              </div>
+              <div id="submit">
+                <div id="login_div1">
+                  <input class="login_switch1" type="submit" value="LOG IN" />
+                </div>
+                <div id="forgetpass">
+                  <p>Forget your password?</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--Area to switch from Login to Signup -->
+        <div id="signup_hide">
+          <div id="signup_hide_title">
+            <h1>NEW HERE?</h1>
+          </div>
+          <div id="signup_hide_desc">
+            <p>Enter your personal details and start journey with us.</p>
+          </div>
+          <div id="signup_div1">
+            <input class="signup_switch1" type="submit" value="SIGN UP" />
+          </div>
+        </div>
+      </div>
+
+      <!--Signup area container -->
+      <div class="signup">
+        <!-- Area to switch from Signup to Login-->
+        <div id="login_hide">
+          <div id="login_hide_title">
+            <h1>WELCOME BACK</h1>
+          </div>
+          <div id="login_hide_desc">
+            <p>
+              To keep connected with us, please login with your personal
+              information.
+            </p>
+          </div>
+          <div id="login_div2">
+            <input class="login_switch2" type="submit" value="LOG IN" />
+          </div>
+        </div>
+
+        <!-- Signup side area and form -->
+        <div id="signup_show">
+          <div id="signup_title">
+            <h1>SIGN UP</h1>
+          </div>
+          <div id="signup_form">
+            <form>
+              <div id="signup_name">
+                <div id="signup_name_first">
+                  <label>FIRST NAME</label><br />
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div id="signup_name_last">
+                  <label>LAST NAME</label><br />
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+              <div id="signup_email">
+                <label>EMAIL</label><br />
+                <input
+                  type="email"
+                  id="signupemail"
+                  name="signupemail"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div id="signup_pass">
+                <label>PASSWORD</label><br />
+                <input
+                  type="password"
+                  id="signuppassword"
+                  name="signuppassword"
+                  placeholder=""
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
+                />
+              </div>
+              <div id="signup_number">
+                <label>MOBILE NUMBER</label><br />
+                <input
+                  type="tel"
+                  id="signupnumber"
+                  name="signupnumber"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div id="captcha">
+                <div id="captcha_text">
+                  <label>CAPTCHA</label>
+                  <input
+                    type="number"
+                    id="captchatext"
+                    name="captchatext"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div id="captcha_value">
+                  <input type="number" />
+                </div>
+              </div>
+              <div id="signup_tc">
+                <div id="left">
+                  <input
+                    type="checkbox"
+                    id="signuptc"
+                    name="signuptc"
+                    required
+                  />
+                </div>
+                <div id="right">
+                  <p>
+                    I accept the
+                    <strong style="color: red;"
+                      >Terms of use, Disclaimer, Privacy, Policy, Rules &
+                      Regulations</strong
+                    >
+                    and
+                    <strong style="color: red;"
+                      >Data collection Contract.</strong
+                    >
+                  </p>
+                </div>
+              </div>
+              <div id="signup_button">
+                <input class="signup_but" type="submit" value="SIGN UP" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="LoginSignup.js"></script>
+  </body>
+</html>
